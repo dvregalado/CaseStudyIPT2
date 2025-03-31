@@ -3,57 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Denzel Vonn - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=2120&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://images.unsplash.com/photo-1510936111840-65e151ad71bb?q=80&w=2090&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
             background-size: cover;
             margin: 0;
             padding: 0;
             text-align: center;
             color: white;
         }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: rgba(255, 255, 255, 0);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid white;
+            border: 5px solid white;
             margin-top: 10px;
+            transition: transform 0.5s ease-in-out;
+            cursor: pointer;
         }
-        .project {
-            background: rgba(255, 255, 255, 0.3);
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        .info {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #f8f9fa;
+        }
+        .contact a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact a:hover {
+            color: #ff9800;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>My Portfolio</h1>
-        <p>Welcome to my personal portfolio website.</p>
-        
-        <img src="C:\Users\Admin\OneDrive\Pictures\460844168_902070888650135_8477370630767545961_n.jpg" alt="Profile Picture" class="profile-img">
-        
-        <h2>About Me</h2>
-        <p><strong>Name:</strong> Denzel Vonn Regalado</p>
-        <p><strong>Age:</strong> 25</p>
-        <p><strong>Birthdate:</strong> Nov 30, 1999</p>
+    <h1>🌟 Welcome to my Portfolio 🌟</h1>
+    
+    <img src="C:\Users\Admin\OneDrive\Pictures\460844168_902070888650135_8477370630767545961_n.jpg" alt="Profile Picture" class="profile-img" id="profilePic">
+    
+    <h2>🎨 About Me</h2>
+    <p class="info"><strong>Age:</strong> 25</p>
+    <p class="info"><strong>Birthdate:</strong> November 30, 1999</p>
 
-        <h2>Contact</h2>
-        <p>Email: denzelregalado@gmail.com</p>
-        <p>Facebook: Vonregalado</p>
-        <p>GitHub:dvregalado</p>
-    </div>
+    <h2>📬 Contact Me</h2>
+    <p><strong>Email:</strong> <a href="mailto:denzelregalado@gmail.com">denzelregalado@gmail.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/vonregalado7_" target="_blank">@vonregalado7_</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/dvregalado" target="_blank">dvreglado</a></p>
+
+    <script>
+        window.onload = function() {
+            alert("Welcome to Denzel Vonn Portfolio! Enjoy your visit.");
+        };
+
+        document.getElementById("profilePic").addEventListener("click", function() {
+            this.src = "C:\Users\Admin\OneDrive\Pictures\460844168_902070888650135_8477370630767545961_n.jpg"; 
+            alert("Profile picture changed!");
+        });
+    </script>
 </body>
 </html>
