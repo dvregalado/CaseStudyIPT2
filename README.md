@@ -1,1 +1,1 @@
-# CaseStudyIPT2
+# IPT2-Case-Study-Midterm
